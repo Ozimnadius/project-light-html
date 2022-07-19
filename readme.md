@@ -1,5 +1,5 @@
 ## **Важно**
-Нельзя изменять скомпилированные файлы: js/main.min.js, js/libs.min.js, css/main.css, css/libs.min.css.
+Нельзя изменять скомпилированные файлы: js/script.js, js/libs.js, css/style.css, css/libs.css.
 
 Для CSS используйте css/custom.css.
 

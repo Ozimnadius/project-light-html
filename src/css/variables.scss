@@ -1,10 +1,16 @@
-$font: 'Roboto', Arial, sans-serif;
+:root{
+  --font: Arial, sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+  --line-height: 1.42;
 
-$txt: #202020;
-$bg: #ffffff;
-$link: #e7511c;
-$gold: #bfa058;
+  --container-width: 1170px;
+  --container-padding: 0 20px;
 
+  --color-text: #202020;
+  --color-bg: #ffffff;
+  --color-link: #1c88e7;
+  --color-link-hover: #00166f;
 
-$font-size: 16px;
-$transition: 0.3s;
+  --transition: 0.4s;
+}

@@ -1,30 +1,23 @@
-input::-ms-clear {
-  display: none;
-}
-
-html.ie9 * {
-  border-radius: 0 !important;
-}
-
 html {
   width: 100%;
   height: 100%;
-  font-size: $font-size;
-  font-weight: 300;
-  line-height: 1.42;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+  font: inherit;
 }
 
 body {
   width: 100%;
   height: 100%;
-  background: $bg;
-  font-family: $font;
-  color: $txt;
+  background: var(--bg);
+  font-family: var(--font);
+  color: var(--txt);
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
 }
@@ -34,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  &__content{
+  &__content {
     flex-grow: 1;
   }
 }
@@ -44,11 +37,10 @@ body {
 }
 
 .container {
-  @include wrapper;
-}
-
-.row {
-  @include row-flex;
+  width: 100%;
+  max-width: var(--container-width);
+  padding: var(--container-padding);
+  margin: 0 auto;
 }
 
 .content {
@@ -57,19 +49,21 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: currentColor;
   outline: none;
-}
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
+  &:hover {
+    color: currentColor;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-img {
+
+img, svg, picture {
+  display: block;
   max-width: 100%;
 }
 
@@ -79,7 +73,7 @@ button {
   outline: none;
   cursor: pointer;
   padding: 0;
-  font: inherit;
+  color: inherit;
 }
 
 ul, ol {
@@ -92,5 +86,5 @@ input, textarea {
   border: none;
   background: none;
   outline: none;
-  font: inherit;
+  color: inherit;
 }
